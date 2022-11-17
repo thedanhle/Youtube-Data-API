@@ -8,18 +8,25 @@
 </head>
 <body>
     <form>
-        First name: <input type="text"><br>
-        Last name: <input type="text"><br>
-        Email: <input type="email" required><br>
-        Birthday: <input type="date"><br>
+        <a href = "index.html">First Page</a>
+        <br>
+        First name: <input type="text" name="firstname"><br>
+        Last name: <input type="text" name = "lastname"><br>
+        Email: <input type="email" name="email" required><br>
+        Password: <input type="password" name="password" min="5"><br>
+        Birthday: <input type="date" name = birthday><br>
         Gender: <br>
-        <input type="radio" name="gender">Male<br>
-        <input type="radio" name="gender">Female<br>
-        <input type="radio" name="gender">Other<br>
+        <input type="radio" name="gender" value = "Male">Male<br>
+        <input type="radio" name="gender" value = "Female">Female<br>
+        <input type="radio" name="gender" value = "Other">Other<br>
         Pets: <br>
-        <input type="checkbox"> Cat <br>
-        <input type="checkbox"> Dog <br>
-
+        <input type="checkbox" name = "Cat"> Cat <br>
+        <input type="checkbox" name="Dog"> Dog <br>
+        Cars: <br>
+        <select name = "cars">
+            <option value="volvo" name="Volvo">Volvo</option>
+            <option value="Audi" name="Audi">Audi</option>
+        </select>
         <br>
         <input type="submit" value="Register">
         <input type="reset">
