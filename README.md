@@ -4,6 +4,14 @@ This repository is a single-page frontend application that is able to search/bro
 # Youtube Data API Documentation: 
 https://developers.google.com/youtube/v3/getting-started
 
+# Personal Goals
+Setup
+- [] Review HTML, CSS, Javascript
+- [] Setup google account and generate APIKEY
+- [] Setup Angular 11 application with Node.js
+- [] Complete tutorial or project to familiarize with technologies.
+- [] Setup application for Youtube API
+
 # Requirements
 - [] Create a home component that lists videos
 - [] Allow search within the Dog category on both the home component and video component (example: q = dog + query).
