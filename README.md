@@ -4,6 +4,10 @@ This repository is a single-page frontend application that is able to search/bro
 # Youtube Data API Documentation: 
 https://developers.google.com/youtube/v3/getting-started
 
+# Project Details
+- Node.js: Version(18.12.1 LTS)
+- Angular: 11
+
 # Personal Goals
 Setup
 - [X] Review HTML, CSS, Javascript
