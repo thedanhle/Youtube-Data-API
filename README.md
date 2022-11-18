@@ -6,16 +6,19 @@ https://developers.google.com/youtube/v3/getting-started
 
 # Project Details
 - Node.js: Version(18.12.1 LTS)
-- Angular: 11
+- Angular: 15
+
+# Commands
 - Install Angular CLI: npm install -g @angular/cli
-- Create Angular App:
+- Create New Angular App: ng new youtube-search-app
+- Open application: ng serve --open
 
 # Personal Goals
 Setup
 - [X] Review HTML, CSS, Javascript
-- [ ] Setup google account and generate APIKEY
-- [ ] Setup Angular 11 application with Node.js
-- [ ] Complete tutorial or project to familiarize with technologies.
+- [X] Setup google account and generate APIKEY
+- [X] Setup Angular 15 application with Node.js
+- [X] Complete tutorial or project to familiarize with technologies.
 - [ ] Setup application for Youtube API
 
 # Requirements
