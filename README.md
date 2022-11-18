@@ -12,6 +12,7 @@ https://developers.google.com/youtube/v3/getting-started
 - Install Angular CLI: npm install -g @angular/cli
 - Create New Angular App: ng new youtube-search-app
 - Open application: ng serve --open
+- Create new component: ng g c newComponentNamme
 
 # Personal Goals
 Setup
