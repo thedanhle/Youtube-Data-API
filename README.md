@@ -6,7 +6,7 @@ https://developers.google.com/youtube/v3/getting-started
 
 # Personal Goals
 Setup
-- [] Review HTML, CSS, Javascript
+- [X] Review HTML, CSS, Javascript
 - [] Setup google account and generate APIKEY
 - [] Setup Angular 11 application with Node.js
 - [] Complete tutorial or project to familiarize with technologies.
