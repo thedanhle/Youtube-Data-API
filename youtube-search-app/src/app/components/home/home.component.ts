@@ -9,28 +9,50 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 })
 export class HomeComponent implements OnInit {
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    //throw new Error('Method not implemented.');
   }
 
   isLoading:boolean = false;
   error:string = '';
   response:any = {};
 
-  search:any = { category: ''}
+  search:any = { category: '', keyword:''}
 
   constructor(private http: HttpClient, private sanitizer: DomSanitizer) { }
 
   searchYoutube(): void {
     this.isLoading = true;
 
-    const url = 'https://www.googleapis.com/youtube/v33/search';
+    const url = 'https://www.googleapis.com/youtube/v3/search';
 
     const urlParams = new HttpParams()
-      .set('part', 'snippet')
       .set('key', 'AIzaSyAHEb-OdV1We9j9qV06YfrOYEGN64MnwVs')
-      .set('q', this.search.category)
+      .set('part', 'snippet')
+      .set('type', 'video')
+      .set('q', this.search.category + this.search.keyword)
+      .set('maxResults', 10)
 
-    const options = { params: urlParams}
+    const options = { params: urlParams};
+
+    this.http.get<any>(url, options).subscribe(
+      (data) => {
+        this.response = data;
+        this.isLoading = false;
+      },
+      (err) => {
+        this.error = err;
+        this.isLoading = false;
+      });
+  }
+
+  getVideoSource(id: string): SafeResourceUrl {
+    if(id != ''){
+      const url = "https://www.youtube.com/embed/" + id;
+      return this.sanitizer.bypassSecurityTrustResourceUrl(url);
+    }
+    else{
+      return '';
+    }
   }
 
 }
