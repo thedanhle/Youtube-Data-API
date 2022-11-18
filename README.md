@@ -8,7 +8,7 @@ https://developers.google.com/youtube/v3/getting-started
 - Node.js: Version(18.12.1 LTS)
 - Angular: 11
 - Install Angular CLI: npm install -g @angular/cli
-- Create Angular App: ng new angular-todo-app
+- Create Angular App:
 
 # Personal Goals
 Setup
