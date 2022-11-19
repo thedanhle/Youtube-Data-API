@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { TestService } from '../services/test.service';
 
 @Component({
   selector: 'app-home',
@@ -27,7 +28,11 @@ export class HomeComponent implements OnInit {
 
   search:any = { keyword:'', type:'dog'};
 
-  constructor(private http: HttpClient, private sanitizer: DomSanitizer) { }
+  constructor(private http: HttpClient, private sanitizer: DomSanitizer, private _testService: TestService) { }
+
+  public btnClick(id: string): void {
+    this._testService.myData = id;
+  }
 
   searchYoutube(): void {
     this.isLoading = true;
