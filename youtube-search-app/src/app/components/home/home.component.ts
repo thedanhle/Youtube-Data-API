@@ -8,6 +8,12 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+
+  page: number = 1;
+  count: number = 0;
+  pageSize: number = 10;
+  VIDEOS: any;
+
   ngOnInit(): void {
     //throw new Error('Method not implemented.');
   }
@@ -30,12 +36,13 @@ export class HomeComponent implements OnInit {
       .set('part', 'snippet')
       .set('type', 'video')
       .set('q', this.search.type + this.search.keyword)
-      .set('maxResults', 10)
+      .set('maxResults',this.pageSize)
 
     const options = { params: urlParams};
 
     this.http.get<any>(url, options).subscribe(
       (data) => {
+        this.VIDEOS = this.response;
         this.response = data;
         this.isLoading = false;
       },
@@ -53,6 +60,11 @@ export class HomeComponent implements OnInit {
     else{
       return '';
     }
+  }
+
+  onDataChange(event: any) {
+    // this.page = event;
+    // this.searchYoutube()
   }
 
 }

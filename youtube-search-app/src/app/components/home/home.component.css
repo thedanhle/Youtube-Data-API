@@ -58,15 +58,13 @@
 }
 
 .row {
-    display: flex;
     height: 100%;
 } 
 
 .col {
-    display: flex;
     border: 1px solid;
 }
 
-.row .my-2 .g-3 .row-cols-1 .row-cols-smm2 .row-cols-md3 .row-cols-lg-4 {
+/* .row .my-2 .g-3 .row-cols-1 .row-cols-smm2 .row-cols-md3 .row-cols-lg-4 {
     display: flex;
-}
+} */
