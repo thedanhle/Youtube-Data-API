@@ -85,6 +85,20 @@
     cursor: pointer;
 }
 
+.loader {
+    border: 16px solid #eda847; /* Light grey */
+    border-top: 16px solid #9e4303; /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
 /* .row .my-2 .g-3 .row-cols-1 .row-cols-smm2 .row-cols-md3 .row-cols-lg-4 {
     display: flex;
 } */
