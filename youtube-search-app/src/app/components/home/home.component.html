@@ -1,11 +1,20 @@
 <!--Search Bar-->
 <div class="search-container">
+    <span class="logo" routerLink="/">MySearchApp</span>
     <form class="search-form">
-        <span class="logo" routerLink="/">MySearchApp</span>
+        <!-- <label for="dropdown">Search Categories</label>
+        <select class="form-select" [(ngModel)]="search.type" id="type">
+            <option selected value="">Choose Categories</option>
+            <option value="dogs">Dogs</option>
+            <option value="cats">Cats</option>
+            <option value="food">Food</option>
+            <option value="sports">Sports</option>
+            <option value="travel">Travel</option>
+        </select> -->
         <input
             class="search-input"
             name="search"
-            ngModel
+            [(ngModel)] ="search.keyword"
             placeholder="Search"
             id="keyword"
         />
@@ -27,21 +36,17 @@
 </div>
 
 <!--list of items returned from api-->
-    <div class="row my-2 g-2 row-cols-1 row-cols-smm2 row-ccols-md3 row-cols-lg-4" *ngIf="!isLoading && response.items.length > 0">
+    <div class="row my-2 g-3 row-cols-1 row-cols-smm2 row-cols-md3 row-cols-lg-4" *ngIf="!isLoading && response.items.length > 0">
         <div class="col" *ngFor="let item of response.items; let i=index">
             <div class="card h-100">
                 <div class="ratio ratio-4x3">
-                    <iframe class="embed-response-item" [src]="getVideoSource(item.id.videoId)" allowfullscreen></iframe>
+                    <iframe class="embed-response-item" [src]="getVideoSource(item.id.videoId)"></iframe>
                 </div>
                 <div class="card-body">
-                    <hr>
-                    <h5 class="card-title text-truncate">{{item.snippet.channelTitle}}</h5>
-                    <h5 class="card-title text-truncate">{{item.snippet.title}}</h5>
-                    <h5 class="card-description text-truncate">{{item.snippet.description}}</h5>
+                    <h5 class="card-channel text-truncate"><b>Channel:</b> {{item.snippet.channelTitle}}</h5>
+                    <h5 class="card-title text-truncate"><b>Title:</b> {{item.snippet.title}}</h5>
+                    <h5 class="card-description text-truncate"><b>Description:</b> {{item.snippet.description}}</h5>
                 </div>
-                <!-- <div class="card-footer">
-                    <span class="float-end">{{item.id.kind}}</span>
-                </div> -->
             </div>
         </div>    
     </div>

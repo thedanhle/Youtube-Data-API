@@ -3,18 +3,20 @@
     height: 60px;
     background-color: #627590;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-center;
     align-items: center;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 4;
+    
 }
 
 .search-form {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1000;
     margin: 0 auto;
+    padding-left: 550px;
 }
 
 .search-input {
@@ -53,4 +55,18 @@
     font-weight: 700;
     cursor: pointer;
     text-decoration: none;
+}
+
+.row {
+    display: flex;
+    height: 100%;
+} 
+
+.col {
+    display: flex;
+    border: 1px solid;
+}
+
+.row .my-2 .g-3 .row-cols-1 .row-cols-smm2 .row-cols-md3 .row-cols-lg-4 {
+    display: flex;
 }

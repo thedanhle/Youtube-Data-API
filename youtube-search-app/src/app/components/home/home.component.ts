@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
   error:string = '';
   response:any = {};
 
-  search:any = { category: '', keyword:''}
+  search:any = { keyword:'', type:'dog'};
 
   constructor(private http: HttpClient, private sanitizer: DomSanitizer) { }
 
@@ -26,10 +26,10 @@ export class HomeComponent implements OnInit {
     const url = 'https://www.googleapis.com/youtube/v3/search';
 
     const urlParams = new HttpParams()
-      .set('key', 'AIzaSyAHEb-OdV1We9j9qV06YfrOYEGN64MnwVs')
+      .set('key', 'AIzaSyCoEBVnuBMfFkFJnWQs7l84_H3rdSGqXbg')
       .set('part', 'snippet')
       .set('type', 'video')
-      .set('q', this.search.category + this.search.keyword)
+      .set('q', this.search.type + this.search.keyword)
       .set('maxResults', 10)
 
     const options = { params: urlParams};
