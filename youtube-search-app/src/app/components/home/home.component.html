@@ -1,17 +1,8 @@
 <!--Search Bar-->
 <div class="search-container">
-    <img class="logo" src="https://static.vecteezy.com/system/resources/previews/005/484/042/original/dog-logo-illustration-free-vector.jpg" alt="" routerLink="/">
-    <span class="company-name" routerLink="/">DogSearchApp</span>
+    <img class="logo" src="https://static.vecteezy.com/system/resources/previews/005/484/042/original/dog-logo-illustration-free-vector.jpg" alt="" routerLink="home">
+    <span class="company-name" routerLink="home">DogSearchApp</span>
     <form class="search-form">
-        <!-- <label for="dropdown">Search Categories</label>
-        <select class="form-select" [(ngModel)]="search.type" id="type">
-            <option selected value="">Choose Categories</option>
-            <option value="dogs">Dogs</option>
-            <option value="cats">Cats</option>
-            <option value="food">Food</option>
-            <option value="sports">Sports</option>
-            <option value="travel">Travel</option>
-        </select> -->
         <input
             class="search-input"
             name="search"
@@ -38,7 +29,7 @@
 
 <!--list of items returned from api-->
 <div class="row my-2 g-3 row-cols-1 row-cols-smm2 row-cols-md3 row-cols-lg-4" *ngIf="!isLoading && response.items.length > 0">
-    <div class="col" *ngFor="let item of response.items | paginate:{
+    <div class="col" routerLink="videoPlayer" *ngFor="let item of response.items | paginate:{
         itemsPerPage: tableSize,
         currentPage: page,
         totalItems: count}; let i=index">
@@ -62,6 +53,4 @@
     >
     </pagination-controls>
     </div>  
-      
 </div>
-    

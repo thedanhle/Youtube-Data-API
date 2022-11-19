@@ -35,7 +35,7 @@ export class HomeComponent implements OnInit {
     const url = 'https://www.googleapis.com/youtube/v3/search';
 
     const urlParams = new HttpParams()
-      .set('key', 'AIzaSyCoEBVnuBMfFkFJnWQs7l84_H3rdSGqXbg')
+      .set('key', 'AIzaSyDJV-fZjnOjCztnkreBXtOmwPXZrwqVkoQ')
       .set('part', 'snippet')
       .set('type', 'video')
       .set('q', this.search.type + this.search.keyword)

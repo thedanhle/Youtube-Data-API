@@ -6,7 +6,7 @@ https://developers.google.com/youtube/v3/getting-started
 
 # Project Details
 - Node.js: Version(18.12.1 LTS)
-- Angular: 15
+- Angular: 15.0.0
 
 # Commands
 - Install Angular CLI: npm install -g @angular/cli
@@ -20,13 +20,13 @@ Setup
 - [X] Setup google account and generate APIKEY
 - [X] Setup Angular 15 application with Node.js
 - [X] Complete tutorial or project to familiarize with technologies.
-- [ ] Setup application for Youtube API
+- [X] Setup application for Youtube API
 
 # Requirements
-- [ ] Create a home component that lists videos
-- [ ] Allow search within the Dog category on both the home component and video component (example: q = dog + query).
-- [ ] Show description/title/thumbnail for every video listed on the home page after a search is entered.
+- [X] Create a home component that lists videos
+- [X] Allow search within the Dog category on both the home component and video component (example: q = dog + query).
+- [X] Show description/title/thumbnail for every video listed on the home page after a search is entered.
 - [ ] Allow videos to be opened in a new page. This would require the creation of a second component.
 - [ ] The video component must display the video itself, the title, and the name of the channel that posted it.
 - [ ] Create a README that outlines your application and how to run it.
-- [ ] Implement pagination or infinity scrolling for said list of videos
+- [X] Implement pagination or infinity scrolling for said list of videos
