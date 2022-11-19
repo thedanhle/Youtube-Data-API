@@ -37,10 +37,13 @@
 
 <!--list of items returned from api-->
 <div class="row my-2 g-3 row-cols-1 row-cols-smm2 row-cols-md3 row-cols-lg-4" *ngIf="!isLoading && response.items.length > 0">
-    <div class="col" *ngFor="let item of response.items; let i=index">
+    <div class="col" *ngFor="let item of response.items | paginate:{
+        itemsPerPage: tableSize,
+        currentPage: page,
+        totalItems: count}; let i=index">
         <div class="card h-100">
             <div class="ratio ratio-4x3">
-                <iframe class="embed-response-item" [src]="getVideoSource(item.id.videoId)"></iframe>
+                <iframe class="embed-response-item" [src]="getVideoSource(item.id.videoId)" allowfullscreen></iframe>
             </div>
             <div class="card-body">
                 <h5 class="card-channel text-truncate"><b>Channel:</b> {{item.snippet.channelTitle}}</h5>
@@ -53,7 +56,7 @@
     <pagination-controls
         previousLabel="Prev"
         nextLabel="Next"
-        (pageChange)="onDataChange($event)"
+        (pageChange)="onTableDataChange($event)"
     >
 
     </pagination-controls>

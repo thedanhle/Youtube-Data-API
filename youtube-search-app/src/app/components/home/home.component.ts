@@ -11,8 +11,11 @@ export class HomeComponent implements OnInit {
 
   page: number = 1;
   count: number = 0;
-  pageSize: number = 10;
+  pageSize: number = 25; //This is how many videos will be rendered total
   VIDEOS: any;
+  tableSize: number = 5; //videos per page
+  //tableSizes: any = [5, 10, 15, 20];
+
 
   ngOnInit(): void {
     //throw new Error('Method not implemented.');
@@ -62,9 +65,15 @@ export class HomeComponent implements OnInit {
     }
   }
 
-  onDataChange(event: any) {
-    // this.page = event;
-    // this.searchYoutube()
+  onTableDataChange(event: any) {
+    this.page = event;
+    this.searchYoutube()
+  }
+
+  onTableSizeChange(event: any):void {
+    this.tableSize= event.target.value;
+    this.page = 1;
+    this.searchYoutube();
   }
 
 }
