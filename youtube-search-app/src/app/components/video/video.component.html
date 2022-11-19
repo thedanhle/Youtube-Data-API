@@ -1,6 +1,8 @@
 <div class="curent-video">
     <!-- <p>Data from home = {{_testService.myData}}</p> -->
     <div class="ratio ratio-4x3">
-        <iframe class="embed-response-item" [src]="getVideoSource(_testService.myData)" allowfullscreen></iframe>
+        <iframe class="embed-response-item" [src]="getVideoSource(_testService.videoid)" allowfullscreen></iframe>
     </div>
+    <p>Channel: {{_testService.videoChannel}}</p>
+    <p>Title: {{_testService.videoTitle}}</p>
 </div>

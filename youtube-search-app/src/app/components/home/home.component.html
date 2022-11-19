@@ -31,7 +31,7 @@
 
 <!--list of items returned from api-->
 <div class="row my-2 g-3 row-cols-1 row-cols-smm2 row-cols-md3 row-cols-lg-4" *ngIf="!isLoading && response.items.length > 0">
-    <div class="col" routerLink="/video" (click)="btnClick(item.id.videoId)" *ngFor="let item of response.items | paginate:{
+    <div class="col" routerLink="/video" (click)="btnClick(item.id.videoId, item.snippet.channelTitle, item.snippet.title)" *ngFor="let item of response.items | paginate:{
         itemsPerPage: tableSize,
         currentPage: page,
         totalItems: count}; let i=index">

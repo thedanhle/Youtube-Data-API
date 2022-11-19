@@ -30,8 +30,10 @@ export class HomeComponent implements OnInit {
 
   constructor(private http: HttpClient, private sanitizer: DomSanitizer, private _testService: TestService) { }
 
-  public btnClick(id: string): void {
-    this._testService.myData = id;
+  public btnClick(id: string, channel: string, title: string): void {
+    this._testService.videoid = id;
+    this._testService.videoTitle = title;
+    this._testService.videoChannel = channel;
   }
 
   searchYoutube(): void {

@@ -7,6 +7,8 @@ export class TestService {
 
 
   constructor() { }
-  public myData: string;
+  public videoid: string;
+  public videoTitle: string;
+  public videoChannel: string;
 
 }
