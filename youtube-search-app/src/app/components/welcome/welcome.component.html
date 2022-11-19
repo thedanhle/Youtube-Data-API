@@ -1,8 +1,20 @@
+<meta charset="UTF-8">
 <!--Welcome Screen-->
 <div class="welcome-container">
     <img class="welcome-logo" src="https://static.vecteezy.com/system/resources/previews/005/484/042/original/dog-logo-illustration-free-vector.jpg" alt="" routerLink="/">
     <span class="welcome-name" routerLink="/">Dog Video Search App</span>
 </div>
+<script>
+function toggleFunction() {
+    var x = document.getElementById("welcome-container");
+    if(x.style.display === "none") {
+      x.style.display = "block";
+    }
+    else {
+      x.style.display = "none";
+    }
+  } 
+</script>
 <div class="start-search">
-        <button routerLink="/home" class="start-search-button">Start Watching Videos!</button>
+        <button routerLink="/home" class="start-search-button" id="display" onclick="toggleFunction()">Click Here To Start Watching Dog Videos!</button>
 </div>
