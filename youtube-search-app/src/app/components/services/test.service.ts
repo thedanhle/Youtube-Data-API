@@ -7,6 +7,6 @@ export class TestService {
 
 
   constructor() { }
-  public myData: string | undefined;
+  public myData: string;
 
 }

@@ -1,6 +1,6 @@
 <div class="curent-video">
-    <p>Data from home = {{_testService.myData}}</p>
+    <!-- <p>Data from home = {{_testService.myData}}</p> -->
     <div class="ratio ratio-4x3">
-        <!-- <iframe class="embed-response-item" [src]="getVideoSource(item.id.videoId)" allowfullscreen></iframe> -->
+        <iframe class="embed-response-item" [src]="getVideoSource(_testService.myData)" allowfullscreen></iframe>
     </div>
 </div>
