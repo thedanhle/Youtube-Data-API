@@ -1,7 +1,7 @@
 <!--Search Bar-->
 <div class="search-container">
-    <img class="logo" src="https://static.vecteezy.com/system/resources/previews/005/484/042/original/dog-logo-illustration-free-vector.jpg" alt="" routerLink="home">
-    <span class="company-name" routerLink="home">DogSearchApp</span>
+    <img class="logo" src="https://static.vecteezy.com/system/resources/previews/005/484/042/original/dog-logo-illustration-free-vector.jpg" alt="" routerLink="/home">
+    <span class="company-name" routerLink="/home">DogSearchApp</span>
     <form class="search-form">
         <input
             class="search-input"
@@ -29,7 +29,7 @@
 
 <!--list of items returned from api-->
 <div class="row my-2 g-3 row-cols-1 row-cols-smm2 row-cols-md3 row-cols-lg-4" *ngIf="!isLoading && response.items.length > 0">
-    <div class="col" routerLink="videoPlayer" *ngFor="let item of response.items | paginate:{
+    <div class="col" routerLink="/video" *ngFor="let item of response.items | paginate:{
         itemsPerPage: tableSize,
         currentPage: page,
         totalItems: count}; let i=index">

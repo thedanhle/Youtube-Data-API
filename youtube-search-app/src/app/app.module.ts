@@ -9,11 +9,13 @@ import { VideoComponent } from './components/video/video.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
+import { WelcomeComponent } from './components/welcome/welcome.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    routingComponents
+    routingComponents,
+    // WelcomeComponent
   ],
   imports: [
     BrowserModule,
