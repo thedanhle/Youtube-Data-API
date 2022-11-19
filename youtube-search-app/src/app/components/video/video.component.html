@@ -3,6 +3,8 @@
     <div class="ratio ratio-4x3">
         <iframe class="embed-response-item" [src]="getVideoSource(_testService.videoid)" allowfullscreen></iframe>
     </div>
-    <p>Channel: {{_testService.videoChannel}}</p>
-    <p>Title: {{_testService.videoTitle}}</p>
+    <div class="details">
+        <p>Channel: {{_testService.videoChannel}}</p>
+        <p>Title: {{_testService.videoTitle}}</p>
+    </div>
 </div>
