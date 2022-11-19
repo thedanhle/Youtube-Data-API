@@ -1,6 +1,7 @@
 <!--Search Bar-->
 <div class="search-container">
-    <span class="logo" routerLink="/">DogSearchApp</span>
+    <img class="logo" src="https://static.vecteezy.com/system/resources/previews/005/484/042/original/dog-logo-illustration-free-vector.jpg" alt="" routerLink="/">
+    <span class="company-name" routerLink="/">DogSearchApp</span>
     <form class="search-form">
         <!-- <label for="dropdown">Search Categories</label>
         <select class="form-select" [(ngModel)]="search.type" id="type">
@@ -52,14 +53,15 @@
             </div>
         </div>
     </div>
+
     <div>
     <pagination-controls
         previousLabel="Prev"
         nextLabel="Next"
         (pageChange)="onTableDataChange($event)"
     >
-
     </pagination-controls>
-    </div>    
+    </div>  
+      
 </div>
     
