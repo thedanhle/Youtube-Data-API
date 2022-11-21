@@ -10,7 +10,7 @@ This repository is a single-page frontend application that is able to search/bro
 - Open the application: ng serve --open
 
 
-##### Project Details
+## Project Details
 - Node.js: Version(18.12.1 LTS)
 - Angular: 15.0.0
 
