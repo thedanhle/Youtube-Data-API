@@ -10,19 +10,19 @@ This repository is a single-page frontend application that is able to search/bro
 - Open the application: ng serve --open
 
 ##### Youtube Data API Documentation: 
-https://developers.google.com/youtube/v3/getting-started
+- https://developers.google.com/youtube/v3/getting-started
 
-###### Project Details
+##### Project Details
 - Node.js: Version(18.12.1 LTS)
 - Angular: 15.0.0
 
-###### Commands
+##### Commands
 - Install Angular CLI: npm install -g @angular/cli
 - Create New Angular App: ng new youtube-search-app
 - Open application: ng serve --open
 - Create new component: ng g c newComponentNamme
 
-###### Personal Goals
+##### Personal Goals
 Setup
 - [X] Review HTML, CSS, Javascript
 - [X] Setup google account and generate APIKEY
@@ -30,7 +30,7 @@ Setup
 - [X] Complete tutorial or project to familiarize with technologies.
 - [X] Setup application for Youtube API
 
-###### Requirements
+##### Requirements
 - [X] Create a home component that lists videos
 - [X] Allow search within the Dog category on both the home component and video component (example: q = dog + query).
 - [X] Show description/title/thumbnail for every video listed on the home page after a search is entered.
