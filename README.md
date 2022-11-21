@@ -24,6 +24,12 @@ This repository is a single-page frontend application that is able to search/bro
 - [X] Create a README that outlines your application and how to run it.
 - [X] Implement pagination or infinity scrolling for said list of videos
 
+## TODO
+- [ ] Fix CSS styling to make the logos/company name fit dynamically on windows/mac or when zooming in/out.
+- [ ] Fix issue where welcome component doesn't disappear after navigating to the home component.
+- [ ] Add comments to code for understanding.
+- [ ] Fix CSS styling to make the pagination easier to see.
+
 
 ##### Youtube Data API Documentation: 
 - https://developers.google.com/youtube/v3/getting-started
