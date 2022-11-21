@@ -42,3 +42,10 @@ This repository is a single-page frontend application that is able to search/bro
 - [X] Setup Angular 15 application with Node.js
 - [X] Complete tutorial or project to familiarize with technologies.
 - [X] Setup application for Youtube API
+
+## Projects to learn HTML, CSS, and Angular
+- https://github.com/thedanhle/Youtube-Data-API/tree/Review-HTML
+- https://github.com/thedanhle/Youtube-Data-API/tree/Review-CSS
+- https://github.com/thedanhle/Todo-App-Angular
+- https://github.com/thedanhle/Game-Database-Angular
+
