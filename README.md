@@ -23,7 +23,6 @@ This repository is a single-page frontend application that is able to search/bro
 - Create new component: ng g c newComponentNamme
 
 ##### Personal Goals
-Setup
 - [X] Review HTML, CSS, Javascript
 - [X] Setup google account and generate APIKEY
 - [X] Setup Angular 15 application with Node.js
