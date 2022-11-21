@@ -2,7 +2,7 @@
 This repository is a single-page frontend application that is able to search/browse dog related youtube videos.
 
 ## How To Run The Application
-- Git Clone the repository (ssh): git clone git@github.com:thedanhle/Youtube-Data-API.git | (html): git clone https://github.com/thedanhle/Youtube-Data-API.git
+- Git Clone the repository (ssh): git clone git@github.com:thedanhle/Youtube-Data-API.git
 - Navigate into youtube-search-app directory from Youtube-Data-API: cd youtube-search-app
 - Make sure you have Node.Js(18.12.1)installed: https://nodejs.org/en/
 - Install all required packages: npm install
