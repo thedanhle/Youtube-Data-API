@@ -55,3 +55,13 @@ This repository is a single-page frontend application that is able to search/bro
 - https://github.com/thedanhle/Todo-App-Angular
 - https://github.com/thedanhle/Game-Database-Angular
 
+## Online Tutorials
+- https://www.youtube.com/watch?v=TE66McLMMEw&ab_channel=AnsontheDeveloper
+- https://www.youtube.com/watch?v=QY8dhl1EQfI&ab_channel=AnsontheDeveloper
+- https://www.youtube.com/watch?v=h9D73o7pE8A&ab_channel=RandomCodez
+- https://www.youtube.com/watch?v=0WmXzFWdbvs&t=114s&ab_channel=CodingShiksha
+- https://developers.google.com/youtube/v3/docs/search/list?authuser=2&apix=true&apix_params=%7B%22part%22%3A%5B%22snippet%22%5D%2C%22q%22%3A%22dog%22%7D
+- https://www.youtube.com/watch?v=56yhr_-W0tQ&ab_channel=RandomCodez
+- https://www.youtube.com/watch?v=BidKhz40kcU&ab_channel=TutorialRays
+- https://www.youtube.com/watch?v=wRY0TwKADPc&ab_channel=WebGentle
+- https://angular.io/tutorial/toh-pt4
